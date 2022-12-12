@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor presente</title>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <br><br>
+    <a href="vf.html">Mudar para a página de cálculo do valor futuro</a>
+    <br>
+    <br>
+    <label for="valor">Insira o valor futuro</label>
+    <input id="valor" type="number">
+    <br>
+    <label for="taxa">Insira a taxa i em formato centésimal</label>
+    <input id="taxa" type="number">
+    <br>
+    <label for="n">Insira a quantidade de períodos</label>
+    <input id="n" type="number">
+    <br>
+    <button onclick="valorTemporal('1')">Calcular valor presente</button>
+    <br>
+    Valor presente: <div id="resultado"></div>
+    <script src="../js/vpvf.js"></script>
+</body>
+</html>

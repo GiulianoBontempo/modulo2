@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros simples</title>
+</head>
+<body>
+    <a href="../index.html">Voltar</a>
+    <br><br>
+    <label for="capital">Insira o capital inicial</label>
+    <input type="number" min="0" id="capital">
+    <br>
+    <label for="n">Insira a quantidade de tempo em dias</label>
+    <input type="number" min="0" step="1" id="n">
+    <br>
+    <label  for="i">Insira a taxa de juros a.a</label>
+    <input type="number" id="i" min="0" max="1" step="0.001">
+    <br>
+    <button onclick="jurosSimples()">Calcular</button>
+    <br>
+    Juros: <div id="juros"></div>
+    Montante: <div id="montante"></div>
+
+    <script src="../js/jurosSimples.js"></script>
+</body>
+</html>
